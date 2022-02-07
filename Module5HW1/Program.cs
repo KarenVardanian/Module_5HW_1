@@ -11,8 +11,8 @@ namespace Module5HW1
         public static async Task Main(string[] args)
         {
             var userService = new UserService();
-            await userService.FirstRequest();
-            userService.TestMethod1Async();
+           // await userService.FirstRequest();
+            await userService.ThirdRequest();
         }
      }
 }
