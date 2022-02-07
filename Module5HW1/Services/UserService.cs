@@ -23,8 +23,8 @@ namespace Module5HW1.Services
                 if (result.StatusCode == HttpStatusCode.OK)
                 {
                     var content = await result.Content.ReadAsStringAsync();
-                    var user = JsonConvert.DeserializeObject<User>(content);
-                    Console.WriteLine(user.FirstName);
+                    var user = JsonConvert.DeserializeObject<RootUserSecond>(content);
+                    
                 }
             }
         }

@@ -11,8 +11,12 @@ namespace Module5HW1
         public static async Task Main(string[] args)
         {
             var userService = new UserService();
-           // await userService.FirstRequest();
-            await userService.ThirdRequest();
+            var resource = new ResourceService();
+            // await userService.FirstRequest();
+            // await userService.ThirdRequest();
+            //  await resource.FourthRequest();
+
+            await resource.SeventhRequest();
         }
      }
 }
